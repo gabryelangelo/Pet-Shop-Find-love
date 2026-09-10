@@ -1,0 +1,247 @@
+
+ /*cores*/
+     :root{
+         --cor0: #ffffff;
+         --cor1: #253659;
+         --cor2: #03A696;
+         --cor3: #04BF9D;
+         --cor4: #F28157;
+         --cor5: #CC6D64;
+         --cor6: #211991;
+         --cor7: #333333;
+     }
+
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333333;
+            line-height: 1.6;
+            background: #04BF9D;
+           
+             }
+
+              .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+    section {
+            padding: 60px 0;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #253659;
+        }
+        .btn {
+            display: inline-block;
+            background: #253659;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background: #a1d73c;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: #03A696;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(207, 5, 109, 0.1);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #253659;
+            text-decoration: none;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav li {
+            margin-left: 20px;
+        }
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ffa500;
+        }
+
+        /* Seção de Destaque */
+       #home {
+            background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+            color: #555;
+            padding: 180px 0;
+        }
+        #home h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #253659;
+        }
+        #home p { 
+            font-size: 20px;
+        }
+
+        /* Sobre Nós */
+        #about .about-content {
+            background-color: #03A696;
+            display: flex;
+            gap: 40px;
+            text-align: left;
+            align-items: center;
+            margin-top: 40px;
+        }
+        #about img {
+            border-radius: 10px;
+            width: 410px;
+            height: auto;
+        }
+
+        /* Produtos */
+        #products {
+            background: #03A696;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .product-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            margin-top: 15px;
+        }
+        .product-card .price {
+            font-size: 20px;
+            color: #ffa500;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+        }
+        .btn-add {
+            background: #333;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: block;
+        }
+        .btn-add:hover {
+            background: #555;
+        }
+
+        /* Serviços */
+        .service-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .service-item {
+            background:#253659;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 5px rgba(14, 7, 63, 0.1);
+            flex: 1;
+            min-width: 250px;
+        }
+         .service-item h3,p{
+             margin-bottom: 15px;
+             color: #ffffff;
+            }
+            
+        .service-item i {
+            font-size: 40px;
+            color: #ffa500;
+            margin-bottom: 15px;
+        }
+
+        /* Contato */
+        #contact {
+            background: #04BF9D;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #contact-form input,
+        #contact-form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        #contact-form textarea {
+            resize: vertical;
+        }
+
+        /* Rodapé */
+        footer {
+            background: #253659;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+            header nav ul {
+                margin-top: 15px;
+            }
+            header nav li {
+                margin: 0 10px;
+            }
+            #home h1 {
+                font-size: 36px;
+            }
+            #about .about-content {
+                flex-direction: column;
+            }
+        }
+
